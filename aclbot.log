@@ -1,0 +1,2039 @@
+INFO       - 2023-11-01 18:14:55,418 - on_start - Bot started
+INFO       - 2023-11-01 18:14:55,429 - start_polling - Start polling
+INFO       - 2023-11-01 18:14:55,504 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:15:12,709 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:15:15,366 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:15:16,564 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:15:21,322 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:15:45,293 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:15:49,323 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:17:01,359 - on_start - Bot started
+INFO       - 2023-11-01 18:17:01,360 - start_polling - Start polling
+INFO       - 2023-11-01 18:17:01,448 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:17:06,456 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:18:34,086 - start_polling - Polling stopped
+INFO       - 2023-11-01 18:18:34,086 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:18:40,526 - on_start - Bot started
+INFO       - 2023-11-01 18:18:40,527 - start_polling - Start polling
+INFO       - 2023-11-01 18:18:40,636 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:18:48,228 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:48,229 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:51,505 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:51,505 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:52,882 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:52,882 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:53,336 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:53,336 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:53,544 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:53,544 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:53,803 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:53,803 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:54,641 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:54,641 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:55,014 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:55,014 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:55,486 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:18:55,486 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:18:57,312 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:02,490 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:05,119 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-01 18:19:05,119 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\main.py", line 39, in com_start
+    await bot.send_message(message.from_user.id, text=bot_text)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 2709, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end tag at byte offset 13
+INFO       - 2023-11-01 18:19:26,502 - start_polling - Polling stopped
+INFO       - 2023-11-01 18:19:26,503 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:19:33,257 - on_start - Bot started
+INFO       - 2023-11-01 18:19:33,258 - start_polling - Start polling
+INFO       - 2023-11-01 18:19:33,332 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-01 18:19:48,035 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:48,261 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:48,298 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:48,531 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:48,661 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:19:48,722 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:20:06,501 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-01 18:59:03,117 - start_polling - Polling stopped
+INFO       - 2023-11-01 18:59:03,118 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:01:51,958 - on_start - Bot started
+INFO       - 2023-11-02 18:01:51,965 - start_polling - Start polling
+INFO       - 2023-11-02 18:01:52,052 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:02:10,017 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:03:14,448 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:03:19,344 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:04:12,162 - start_polling - Polling stopped
+INFO       - 2023-11-02 18:04:12,162 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:04:25,307 - on_start - Bot started
+INFO       - 2023-11-02 18:04:25,310 - start_polling - Start polling
+INFO       - 2023-11-02 18:04:25,385 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:04:30,361 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:04:43,296 - start_polling - Polling stopped
+INFO       - 2023-11-02 18:04:43,298 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:04:52,223 - on_start - Bot started
+INFO       - 2023-11-02 18:04:52,224 - start_polling - Start polling
+INFO       - 2023-11-02 18:04:52,305 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-02 18:04:57,865 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:05:03,571 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:05:10,588 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:05:14,535 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-02 18:05:47,789 - start_polling - Polling stopped
+INFO       - 2023-11-02 18:05:47,790 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:34:56,553 - on_start - Bot started
+INFO       - 2023-11-03 17:34:56,557 - start_polling - Start polling
+INFO       - 2023-11-03 17:34:56,633 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:35:20,948 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:35:46,077 - start_polling - Polling stopped
+INFO       - 2023-11-03 17:35:46,078 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:35:53,641 - on_start - Bot started
+INFO       - 2023-11-03 17:35:53,642 - start_polling - Start polling
+INFO       - 2023-11-03 17:35:53,728 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:36:13,584 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-03 17:36:13,585 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 45, in select_level
+    await message.answer(bot_text, reply_markup=keyboard_callback())
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\keyboards.py", line 26, in keyboard_callback
+    return InlineKeyboardBuilder.as_markup()
+TypeError: KeyboardBuilder.as_markup() missing 1 required positional argument: 'self'
+INFO       - 2023-11-03 17:36:17,020 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-03 17:36:17,020 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 45, in select_level
+    await message.answer(bot_text, reply_markup=keyboard_callback())
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\keyboards.py", line 26, in keyboard_callback
+    return InlineKeyboardBuilder.as_markup()
+TypeError: KeyboardBuilder.as_markup() missing 1 required positional argument: 'self'
+INFO       - 2023-11-03 17:36:32,651 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-03 17:36:32,651 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 45, in select_level
+    await message.answer(bot_text, reply_markup=keyboard_callback())
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\keyboards.py", line 26, in keyboard_callback
+    return InlineKeyboardBuilder.as_markup()
+TypeError: KeyboardBuilder.as_markup() missing 1 required positional argument: 'self'
+INFO       - 2023-11-03 17:40:36,999 - start_polling - Polling stopped
+INFO       - 2023-11-03 17:40:36,999 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:40:38,717 - on_start - Bot started
+INFO       - 2023-11-03 17:40:38,719 - start_polling - Start polling
+INFO       - 2023-11-03 17:40:38,803 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:40:45,975 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:40:54,139 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:41:00,209 - start_polling - Polling stopped
+INFO       - 2023-11-03 17:41:00,209 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:47:31,687 - on_start - Bot started
+INFO       - 2023-11-03 17:47:31,689 - start_polling - Start polling
+INFO       - 2023-11-03 17:47:31,773 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:47:36,954 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:47:41,739 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:47:45,030 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:47:49,653 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:52:34,093 - start_polling - Polling stopped
+INFO       - 2023-11-03 17:52:34,094 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-03 17:52:34,176 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001550D26D270>
+INFO       - 2023-11-03 17:52:35,956 - on_start - Bot started
+INFO       - 2023-11-03 17:52:35,957 - start_polling - Start polling
+INFO       - 2023-11-03 17:52:36,042 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:52:43,442 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:52:45,742 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:52:48,482 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:52:50,667 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:55:02,430 - start_polling - Polling stopped
+INFO       - 2023-11-03 17:55:02,430 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:55:04,212 - on_start - Bot started
+INFO       - 2023-11-03 17:55:04,213 - start_polling - Start polling
+INFO       - 2023-11-03 17:55:04,286 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 17:55:07,437 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:55:08,813 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:55:12,374 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:55:13,276 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:55:49,990 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 17:56:06,767 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:01:50,620 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:01:50,621 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:01:52,404 - on_start - Bot started
+INFO       - 2023-11-03 18:01:52,405 - start_polling - Start polling
+INFO       - 2023-11-03 18:01:52,486 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:01:56,850 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:01:58,009 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:02:05,850 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:02:39,919 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:02:39,919 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:02:41,693 - on_start - Bot started
+INFO       - 2023-11-03 18:02:41,694 - start_polling - Start polling
+INFO       - 2023-11-03 18:02:41,778 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:03:14,938 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:03:16,967 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:03:18,381 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-03 18:03:18,382 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in bot_ask_question
+    await callback.message.edit_text(generate_puzzle())
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+INFO       - 2023-11-03 18:03:22,168 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-03 18:03:22,168 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in bot_ask_question
+    await callback.message.edit_text(generate_puzzle())
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 175, in make_request
+    response = self.check_response(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+INFO       - 2023-11-03 18:05:10,062 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:05:10,062 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:05:11,908 - on_start - Bot started
+INFO       - 2023-11-03 18:05:11,910 - start_polling - Start polling
+INFO       - 2023-11-03 18:05:11,987 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:05:16,106 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:05:17,611 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:05:18,667 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:06:39,928 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:06:39,928 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:06:41,732 - on_start - Bot started
+INFO       - 2023-11-03 18:06:41,733 - start_polling - Start polling
+INFO       - 2023-11-03 18:06:41,816 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:06:47,903 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:06:49,479 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:07:38,932 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:07:38,932 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:07:40,742 - on_start - Bot started
+INFO       - 2023-11-03 18:07:40,744 - start_polling - Start polling
+INFO       - 2023-11-03 18:07:40,825 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:07:44,217 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:07:45,921 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:07:55,864 - start_polling - Polling stopped
+INFO       - 2023-11-03 18:07:55,865 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:07:57,630 - on_start - Bot started
+INFO       - 2023-11-03 18:07:57,631 - start_polling - Start polling
+INFO       - 2023-11-03 18:07:57,713 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-03 18:08:02,956 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:08:03,983 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:08:04,970 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 18:08:10,940 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 20:36:47,171 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 20:36:49,833 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 20:36:51,775 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-03 20:40:03,792 - start_polling - Polling stopped
+INFO       - 2023-11-03 20:40:03,793 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-03 20:40:03,882 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001C99E2AD780>
+INFO       - 2023-11-08 18:22:58,418 - on_start - Bot started
+INFO       - 2023-11-08 18:22:58,423 - start_polling - Start polling
+INFO       - 2023-11-08 18:22:58,494 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:23:10,197 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:23:19,013 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:23:27,993 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:23:30,669 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:23:34,198 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:23:38,279 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:26:02,992 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:26:02,992 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 18:26:03,088 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000260AC6203A0>
+INFO       - 2023-11-08 18:26:16,460 - on_start - Bot started
+INFO       - 2023-11-08 18:26:16,461 - start_polling - Start polling
+INFO       - 2023-11-08 18:26:16,538 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:26:20,101 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:26:22,020 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:26:23,306 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:31:34,193 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:31:34,193 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:31:35,978 - on_start - Bot started
+INFO       - 2023-11-08 18:31:35,979 - start_polling - Start polling
+INFO       - 2023-11-08 18:31:36,055 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:31:45,906 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:31:48,057 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:31:48,057 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:31:53,603 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:31:53,603 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:31:54,666 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:31:54,666 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:31:56,375 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:31:58,435 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:31:58,435 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:32:03,831 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:32:03,833 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:32:05,598 - on_start - Bot started
+INFO       - 2023-11-08 18:32:05,599 - start_polling - Start polling
+INFO       - 2023-11-08 18:32:05,674 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:32:18,647 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:32:18,647 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:32:20,383 - on_start - Bot started
+INFO       - 2023-11-08 18:32:20,385 - start_polling - Start polling
+INFO       - 2023-11-08 18:32:20,472 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:32:25,576 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:32:26,687 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:32:26,687 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:33:02,470 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:33:02,471 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:33:05,922 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:33:11,059 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:35:30,755 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:35:30,755 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 18:35:30,830 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002C12414D210>
+INFO       - 2023-11-08 18:35:32,584 - on_start - Bot started
+INFO       - 2023-11-08 18:35:32,586 - start_polling - Start polling
+INFO       - 2023-11-08 18:35:32,668 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:35:35,858 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:35:36,661 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:35:36,760 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:35:36,760 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:35:40,019 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:35:40,201 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:35:40,201 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:35:55,671 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:35:55,671 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:35:57,473 - on_start - Bot started
+INFO       - 2023-11-08 18:35:57,474 - start_polling - Start polling
+INFO       - 2023-11-08 18:35:57,545 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:36:00,467 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:36:01,525 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:36:01,656 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:36:01,656 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:36:16,988 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:36:18,262 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:36:18,403 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:36:18,403 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:36:22,222 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:36:22,222 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:36:24,034 - on_start - Bot started
+INFO       - 2023-11-08 18:36:24,035 - start_polling - Start polling
+INFO       - 2023-11-08 18:36:24,108 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:36:26,198 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:36:27,235 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:36:27,361 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:36:27,361 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 74, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:40:12,693 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:40:12,693 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:40:14,569 - on_start - Bot started
+INFO       - 2023-11-08 18:40:14,570 - start_polling - Start polling
+INFO       - 2023-11-08 18:40:14,694 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:40:36,251 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:40:37,522 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:40:37,650 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:40:37,650 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 75, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:40:39,034 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:40:39,213 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:40:39,214 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 75, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:40:41,390 - answer - Answer to callback query id=%s
+INFO       - 2023-11-08 18:40:41,565 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:40:41,565 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\puzzles\puzzle_math.py", line 75, in select_game
+    callback_answer.text = 'Incorrect input'
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\utils\callback_answer.py", line 72, in text
+    raise CallbackAnswerException("Can't change text after answer")
+aiogram.exceptions.CallbackAnswerException: Can't change text after answer
+INFO       - 2023-11-08 18:40:46,213 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:42:26,455 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:42:26,456 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 18:42:26,537 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000020217FC1BD0>
+INFO       - 2023-11-08 18:42:28,292 - on_start - Bot started
+INFO       - 2023-11-08 18:42:28,293 - start_polling - Start polling
+INFO       - 2023-11-08 18:42:28,379 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:42:31,893 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:42:32,724 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:42:32,724 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:43:23,319 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:43:23,319 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:43:25,164 - on_start - Bot started
+INFO       - 2023-11-08 18:43:25,165 - start_polling - Start polling
+INFO       - 2023-11-08 18:43:25,246 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:43:27,189 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:43:28,419 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:43:28,419 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:43:32,772 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:43:35,557 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:43:37,800 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:44:35,712 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:44:35,713 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 18:44:35,787 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000016A254ED120>
+INFO       - 2023-11-08 18:44:37,485 - on_start - Bot started
+INFO       - 2023-11-08 18:44:37,486 - start_polling - Start polling
+INFO       - 2023-11-08 18:44:37,564 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:44:41,806 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:44:42,680 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:44:42,680 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:45:23,870 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:45:23,871 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:45:25,690 - on_start - Bot started
+INFO       - 2023-11-08 18:45:25,691 - start_polling - Start polling
+INFO       - 2023-11-08 18:45:25,773 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:45:29,892 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:45:30,714 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:45:30,714 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:46:04,603 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:46:04,603 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:46:06,436 - on_start - Bot started
+INFO       - 2023-11-08 18:46:06,437 - start_polling - Start polling
+INFO       - 2023-11-08 18:46:06,518 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:46:08,538 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:46:09,506 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:46:09,506 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:46:10,549 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:46:10,549 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:46:11,346 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:46:11,346 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:46:13,531 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:46:17,718 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:46:19,098 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+ERROR      - 2023-11-08 18:46:19,098 - _process_update - Cause exception while process update id=%d by bot id=%d
+%s: %s
+Traceback (most recent call last):
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 144, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\1811m\OneDrive\Документы\GeekBrains\acl_bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+TypeError: select_game() missing 1 required positional argument: 'callback_answer'
+INFO       - 2023-11-08 18:48:55,546 - start_polling - Polling stopped
+INFO       - 2023-11-08 18:48:55,547 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 18:48:55,630 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001FFDA08D270>
+INFO       - 2023-11-08 18:49:28,037 - on_start - Bot started
+INFO       - 2023-11-08 18:49:28,038 - start_polling - Start polling
+INFO       - 2023-11-08 18:49:28,114 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 18:49:32,190 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:49:33,799 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:49:34,922 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 18:49:38,539 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:06:22,035 - start_polling - Polling stopped
+INFO       - 2023-11-08 19:06:22,036 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 19:06:22,118 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026F916DD6C0>
+INFO       - 2023-11-08 19:06:23,823 - on_start - Bot started
+INFO       - 2023-11-08 19:06:23,825 - start_polling - Start polling
+INFO       - 2023-11-08 19:06:23,917 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 19:23:09,425 - start_polling - Polling stopped
+INFO       - 2023-11-08 19:23:09,426 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-08 19:23:11,158 - on_start - Bot started
+INFO       - 2023-11-08 19:23:11,159 - start_polling - Start polling
+INFO       - 2023-11-08 19:23:11,238 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 19:23:21,090 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:23:23,271 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:23:32,915 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:24:28,050 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:24:29,905 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:24:32,339 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:24:43,399 - start_polling - Polling stopped
+INFO       - 2023-11-08 19:24:43,399 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 19:24:43,483 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000028A4101F250>
+ERROR      - 2023-11-08 19:24:43,483 - default_exception_handler - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000028A41049060>, 593928.031)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000028A4101EFB0>
+ERROR      - 2023-11-08 19:24:43,484 - default_exception_handler - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000028A410CD9F0>
+transport: <_ProactorSocketTransport fd=720 read=<_OverlappedFuture cancelled>>
+Traceback (most recent call last):
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 365, in write
+    self._loop_writing(data=bytes(data))
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+AttributeError: 'NoneType' object has no attribute 'send'
+INFO       - 2023-11-08 19:24:45,246 - on_start - Bot started
+INFO       - 2023-11-08 19:24:45,247 - start_polling - Start polling
+INFO       - 2023-11-08 19:24:45,332 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 19:24:48,582 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:24:52,148 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:28:36,622 - start_polling - Polling stopped
+INFO       - 2023-11-08 19:28:36,623 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 19:28:36,697 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001616AD30670>
+INFO       - 2023-11-08 19:29:02,426 - on_start - Bot started
+INFO       - 2023-11-08 19:29:02,427 - start_polling - Start polling
+INFO       - 2023-11-08 19:29:02,500 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-08 19:29:06,680 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:29:09,370 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-08 19:29:14,985 - start_polling - Polling stopped
+INFO       - 2023-11-08 19:29:14,985 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-08 19:29:15,056 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000013ECA7FFA90>
+ERROR      - 2023-11-08 19:29:15,056 - default_exception_handler - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000013ECA8289A0>, 594205.062)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000013ECA7FFA60>
+ERROR      - 2023-11-08 19:29:15,057 - default_exception_handler - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000013ECA8ACEE0>
+transport: <_ProactorSocketTransport fd=632 read=<_OverlappedFuture cancelled>>
+Traceback (most recent call last):
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 365, in write
+    self._loop_writing(data=bytes(data))
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+AttributeError: 'NoneType' object has no attribute 'send'
+INFO       - 2023-11-15 19:59:38,295 - on_start - Bot started
+INFO       - 2023-11-15 19:59:38,303 - start_polling - Start polling
+INFO       - 2023-11-15 19:59:38,384 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 19:59:49,899 - start_polling - Polling stopped
+INFO       - 2023-11-15 19:59:49,900 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:15:25,370 - on_start - Bot started
+INFO       - 2023-11-15 20:15:25,371 - start_polling - Start polling
+INFO       - 2023-11-15 20:15:25,450 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:15:38,270 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:15:41,263 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:15:45,622 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:15:53,942 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:15:56,079 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:16:04,384 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:16:04,385 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-15 20:16:04,477 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B3B2EFBB50>
+ERROR      - 2023-11-15 20:16:04,479 - default_exception_handler - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001B3B2F2D000>, 25230.031)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001B3B2EF9150>
+ERROR      - 2023-11-15 20:16:04,479 - default_exception_handler - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x000001B3B2FA1E70>
+transport: <_ProactorSocketTransport fd=720 read=<_OverlappedFuture cancelled>>
+Traceback (most recent call last):
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 365, in write
+    self._loop_writing(data=bytes(data))
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+AttributeError: 'NoneType' object has no attribute 'send'
+INFO       - 2023-11-15 20:16:07,430 - on_start - Bot started
+INFO       - 2023-11-15 20:16:07,431 - start_polling - Start polling
+INFO       - 2023-11-15 20:16:07,516 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:16:12,442 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:16:12,442 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:16:14,186 - on_start - Bot started
+INFO       - 2023-11-15 20:16:14,187 - start_polling - Start polling
+INFO       - 2023-11-15 20:16:14,267 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:16:18,001 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:16:19,773 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:16:20,674 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:16:45,456 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:16:58,267 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:16:58,268 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:17:08,207 - on_start - Bot started
+INFO       - 2023-11-15 20:17:08,208 - start_polling - Start polling
+INFO       - 2023-11-15 20:17:08,298 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:17:18,430 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:17:20,049 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:17:21,102 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:17:50,118 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:17:51,351 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:17:52,288 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:19:20,783 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:19:34,125 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:19:34,126 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-15 20:19:34,209 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F43ADECF40>
+ERROR      - 2023-11-15 20:19:34,210 - default_exception_handler - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001F43AD6DA20>, 25434.734)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001F43ADED0F0>
+ERROR      - 2023-11-15 20:19:34,210 - default_exception_handler - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x000001F43ADEDD80>
+transport: <_ProactorSocketTransport fd=600 read=<_OverlappedFuture cancelled>>
+Traceback (most recent call last):
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 365, in write
+    self._loop_writing(data=bytes(data))
+  File "C:\Users\1811m\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+AttributeError: 'NoneType' object has no attribute 'send'
+INFO       - 2023-11-15 20:19:35,890 - on_start - Bot started
+INFO       - 2023-11-15 20:19:35,892 - start_polling - Start polling
+INFO       - 2023-11-15 20:19:35,969 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:22:10,577 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:22:10,577 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:22:12,270 - on_start - Bot started
+INFO       - 2023-11-15 20:22:12,271 - start_polling - Start polling
+INFO       - 2023-11-15 20:22:12,357 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:23:00,750 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:23:02,231 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:23:02,870 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:24:40,555 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:24:40,555 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:24:43,615 - on_start - Bot started
+INFO       - 2023-11-15 20:24:43,616 - start_polling - Start polling
+INFO       - 2023-11-15 20:24:43,696 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:24:53,575 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:24:54,973 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:24:55,607 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:27:23,408 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:27:23,408 - _polling - Polling stopped for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:27:25,218 - on_start - Bot started
+INFO       - 2023-11-15 20:27:25,219 - start_polling - Start polling
+INFO       - 2023-11-15 20:27:25,298 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-15 20:27:28,526 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:27:29,737 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:27:30,518 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:27:51,462 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-15 20:36:51,923 - start_polling - Polling stopped
+INFO       - 2023-11-15 20:36:51,923 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-15 20:36:52,005 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002A0DEF2DBA0>
+INFO       - 2023-11-27 19:58:40,700 - on_start - Bot started
+INFO       - 2023-11-27 19:58:40,704 - start_polling - Start polling
+INFO       - 2023-11-27 19:58:40,784 - _polling - Run polling for bot @%s id=%d - %r
+INFO       - 2023-11-27 19:58:50,232 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-27 19:58:57,800 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-27 19:59:01,282 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-27 19:59:08,193 - feed_update - Update id=%s is %s. Duration %d ms by bot id=%d
+INFO       - 2023-11-27 22:46:08,289 - start_polling - Polling stopped
+INFO       - 2023-11-27 22:46:08,292 - _polling - Polling stopped for bot @%s id=%d - %r
+ERROR      - 2023-11-27 22:46:08,499 - default_exception_handler - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026D89BFCFD0>
